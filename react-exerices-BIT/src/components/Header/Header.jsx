@@ -2,16 +2,13 @@ import React from 'react';
 
 
 
-export const Header = () => {
+export const Header = ({isListView, onLayoutToggle}) => {
+  console.log('Header: ' , isListView);
   return (
     <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="waves-effect waves-light btn">Button</a></li>
-        <li><a class="waves-effect waves-light btn">Button <i class="material-icons right">cloud</i></a></li>
-        <li><a class="waves-effect waves-light btn-large">Large Button</a></li>
-      </ul>
+    <div className="nav-wrapper">
+      <a href="#!" className="brand-logo">Logo</a>
+      <a className="waves-effect waves-light btn" onClick={onLayoutToggle} >Layout Toggle</a>
     </div>
   </nav>
    );
