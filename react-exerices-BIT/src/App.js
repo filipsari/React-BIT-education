@@ -23,8 +23,8 @@ class App extends Component {
     console.log('App ', this.state.isListView);
   return (
     <Fragment> 
-    <Header isListView={this.state.isListView} onLayoutToggle={this.onLayoutToggle}   /> 
-    <Users/>
+    <Header isListView={this.state.isListView} onLayoutToggle={this.onLayoutToggle}/> 
+    <Users isListView={this.state.isListView}/> 
     <Footer/>
     </Fragment>
   );

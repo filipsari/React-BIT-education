@@ -5,6 +5,7 @@ export const ListView = ({users}) => {
 
 
   <ul className="collection">
+
      {users.map( 
        (element) => ( 
     <li className="collection-item avatar">
@@ -17,6 +18,7 @@ export const ListView = ({users}) => {
     ))
      }
      </ul>
+     
      )
 
 }

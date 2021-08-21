@@ -8,7 +8,7 @@ export const Header = ({isListView, onLayoutToggle}) => {
     <nav>
     <div className="nav-wrapper">
       <a href="#!" className="brand-logo">Logo</a>
-      <a className="waves-effect waves-light btn" onClick={onLayoutToggle} >Layout Toggle</a>
+      <a className="waves-effect waves-light btn" onClick={onLayoutToggle} > {isListView ? "List View" : "Grid View"}   </a>
     </div>
   </nav>
    );
